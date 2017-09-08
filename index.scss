@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.outer {
+  text-align: center;
+  width: 500px;
+  border: 1px solid red;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  .center-text {
+    line-height: 20px;
+  }
+}
+
+.container {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  border: 1px solid red;
+  overflow: hidden;
+  .center-text {
+    line-height: 50px;
+  }
+}
+
+.is-table {
+  display: table;
+  width: 500px;
+  height: 100px;
+  border: 1px solid red;
+  .is-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    .center-text {
+
+    }
+  }
+}
+
+.is-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height:200px;
+  border: 1px solid red;
+  &.is-align-center{
+    flex-direction: column;
+  }
+  .center-text {
+    padding: 10px;
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本的水平垂直居中对齐解决方案</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h3>单行文本的水平垂直居中</h3>
+<h6>1,利用padding</h6>
+<div class="outer">
+    <span class="center-text">轻轻的我走了，正如我轻轻的来，我挥一挥衣袖，不带走一片云彩.</span>
+</div>
+<h6>2,利用line-height</h6>
+<div class="container">
+    <span class="center-text">轻轻的我走了，正如我轻轻的来，我挥一挥衣袖，不带走一片云彩.</span>
+</div>
+<h6>3,利用display:table 也适用于多行</h6>
+<div class="is-table">
+    <div class="is-table-cell">
+        <span class="center-text">轻轻的我走了，正如我轻轻的来，我挥一挥衣袖，不带走一片云彩.</span>
+    </div>
+</div>
+<div class="is-table">
+    <div class="is-table-cell">
+        <span class="center-text">轻轻的我走了，正如我轻轻的来，我挥一挥衣袖，不带走一片云彩.那河畔的杨柳像夕阳中的新娘，波光里的艳影在我的心头荡漾.</span>
+    </div>
+</div>
+<h3>多行文本的水平垂直居中</h3>
+<div class="is-flex">
+    <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda delectus deserunt dolor dolore, doloremque earum est ex facere fugit illum, laborum minima neque nihil odio possimus reiciendis? Dicta, obcaecati.</p>
+</div>
+<div class="is-flex">
+    <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda delectus deserunt dolor dolore, doloremque earum est ex facere fugit illum, laborum minima neque nihil odio possimus reiciendis? Dicta, obcaecati.</p>
+    <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda aut autem, beatae blanditiis est explicabo mollitia natus necessitatibus perferendis repudiandae saepe! Accusamus fuga officiis perferendis quae sequi tempore, voluptatum.</p>
+</div>
+<div class="is-flex is-align-center">
+    <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda delectus deserunt dolor dolore, doloremque earum est ex facere fugit illum, laborum minima neque nihil odio possimus reiciendis? Dicta, obcaecati.</p>
+    <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda aut autem, beatae blanditiis est explicabo mollitia natus necessitatibus perferendis repudiandae saepe! Accusamus fuga officiis perferendis quae sequi tempore, voluptatum.</p>
+</div>
+</body>
+</html>
